@@ -1,0 +1,105 @@
+body 
+{
+    font-family: 'Open Sans', sans-serif;
+    background:black;
+    color: white;
+}
+
+.container 
+{
+    margin: auto;
+    /* max-width: 1300px; */
+}
+
+.container h1
+{
+    font-size: 100px;
+    text-align: center;
+}
+
+.container p
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.ticket_all 
+{
+    color: white;
+    text-align: center;
+    background: blue;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.ticket_closed 
+{
+    color: white;
+    text-align: center;
+    background: green;
+    padding: 50px;    
+}
+
+.ticket_unread 
+{
+    color: white;
+    text-align: center;
+    background: red;
+    padding: 50px;    
+}
+
+.ticket_in_progress 
+{
+    color: white;
+    text-align: center;
+    background: rgba(255, 255, 0, 0.685);
+    padding: 50px;    
+}
+
+.accordion 
+{
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover 
+{
+  background-color:blue;
+}
+
+.accordion:after 
+{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    margin-left: 5px;
+}
+  
+.active:after 
+{
+    content: "\2212";
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.panel 
+{
+  padding: 0 18px;
+  background-color: blue;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
